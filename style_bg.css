@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1em 3em;
+  background-color: wheat;
+  cursor: pointer;
+  width: 50%;
+  background-color: aquamarine;
+  z-index: 99;
+  opacity: 0.5;
+  transition: all 1s;
+}
+
+.content:hover {
+  background-color: rgb(13, 233, 160);
+  background-position: top left;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+
+.bg_image {
+  background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/000/506/042/large/file.jpg?1599602669");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  height: 100vh;
+  z-index: -1;
+}
